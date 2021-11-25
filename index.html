@@ -1,79 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/next.jpg">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    <title>Next Level Detailing!</title>
+    <script src="https://kit.fontawesome.com/e4ec7a12c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Carnival ducks</title>
 </head>
-
 <body>
+ <div id="wrapper">
+   <header id="header">
+    <div class="logo">
+        <img
+        id="header-img"
+        src="images/ducks.png"
+        alt="Carnival Ducks logo" />
+    </div>
+
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="#reason" class="nav-link">Reasons</a>
+            </li>
+            <li><a href="#how-to-hide" class="nav-link">How to hide</a>
+            </li>
+            <li><a href="#types" class="nav-link">Types of ducks</a>
+            </li>
+        </ul>
+    </nav>
+   </header>
+  </div>
+
+     <section id="hero">
+        <h2>Crusing carnival ducks!</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input name="email"
+            id="email"
+            type="email"
+            placeholder="Please enter your email address"
+            required/>
+
+            <input id="submit"
+            type="submit"
+            value="See ducks in hiding"
+            class="btn"/>
+        </form>
+    </section>
+
     <div class="container">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/next.jpg" alt="next level detailing">
+        <section id="reason">
+            <div class="grid">
+                <div class="icon"><i class="fas fa-ship"></i></div>
+                <div class="desc">
+                    <h2>Fun for everyone!</h2>
+                    <p>Ducks are hidden on ships for fun and maybe a little compitition<br>
+                    (you didn't hear that from us!)
+                </p>
+                </div>
             </div>
-            <div class="link">
-                <a href="#"> about</a>
-                <a href="#"> shop</a>
-                <a href="#">contact</a>
-            </div>
-        </nav>
-        <div class="hero">
-            <div calss="hero-1 hero-cta">
-                <h1>Welcome to Next Level Detailing!</h1>
-                <p>Next Level Detailing brings competetive pricing to the mobile detailing business without cutting the quality of work!</p>
-                <button type="button">Sign up!</button>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero.jpg" alt="a car">
-            </div>
-        </div>
 
-        <div class="content">
-            <h2>Beautiful Cars!</h2>
-            <div class="content-info">
+            <div class="grid">
+                <div class="icon"><i class="fas fa-grin-squint-tears"></i></div>
+                <div class="desc">
+                    <h2>Collectobility</h2>
+                    <p>You can collect the ducks you find and keep even more memories from your vacation!
+                </p>
+                </div>
+            </div>
 
-                <div>
-                    <img src="images/car1.jpeg" alt="black audi">
-                    <p>A Beautiful black Audi</p>
-                </div>
-                <div>
-                    <img src="images/car2.jpg" alt="blue bmw">
-                    <p>A very nice blue BMW!</p>
-                </div>
-                <div>
-                    <img src="images/car3.jpg" alt="white mercedes">
-                    <p>Super clean Mercedes!</p>
-                </div>
-                <div>
-                    <img src="images/car4.jpeg" alt="white challenger">
-                    <p>Agressive Challenger ScatPack!!!</p>
+            <div class="grid">
+                <div class="icon"><i class="fas fa-sync"></i></div>
+                <div class="desc">
+                    <h2>Re-hide</h2>
+                    <p>You can Re-hide them to keep the fun going all vaction long!
+                </p>
                 </div>
             </div>
-        </div>
-        <div class=quote>
-            <p>Next Level Detailing has made my car shine better then when it was brand new!! This is The best detailing service around!
-            </p>
-            <br> -- Loyal customer
-            </br>
-        </div>
-        <div class="sign-up">
-            <div class="sign-items sign-text">
-                <h3>Sign up for the waitlist!</h3>
-                <p>Sign up to be put on the ever growing waitlist to get your car treated right!</p>
-            </div>
-            <div class="sign-button">
-                <button type="button"> Sign up!</button>
-            </div>
-        </div>
-        <div class="footer">
-            <p>Copyright © Next Level Detailing 2021 </p>
+        </section>
 
-        </div>
+        <section id="how-to-hide">
+           <iframe
+           id="video"
+            src="https://www.youtube.com/embed/aI821oRGwt0" frameborder="0"
+            allowfullscreen
+            ></iframe>
+        </section>
+
+        <section id="types">
+            <div class="duck" id="painted">
+                <div class="level">Painted</div>
+                <h2>Cheapest</h2>
+                <ol>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                </ol>
+                <button class="button">Select</button>
+            </div>
+
+            <div class="duck" id="bought">
+                <div class="level">Pre-Bought</div>
+                <h2>Mid-range</h2>
+                <ol>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                </ol>
+                <button class="button">Select</button>
+
+            </div>
+
+            <div class="duck" id="custom">
+                <div class="level">Full custom</div>
+                <h2>Expensive</h2>
+                <ol>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                </ol>
+                <button class="button">Select</button>
+            </div>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span>Created by Johnny L     <a href="https://github.com/gh0st66" target="blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/johnny-levelle-7b3816141/" target="blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://stackoverflow.com/users/17260261/johnny-l" target="blank">
+                <i class="fab fa-stack-overflow"></i>
+            </a>
+            <a href="https://angel.co/u/johnny-levelle" target="blank">
+                <i class="fab fa-angellist"></i>
+            </a></span>
+
+            <p>Video credit goes to the uploader i do not own the rights</p>
+        </footer>
+    </div>
+
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
-
 </html>
